@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Images</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body, html {
+    height: 100%;
+    overflow-x: hidden;
+	    }
+	    a {
+            font-size: 20px;
+            margin-right: 30px;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+    background-color: grey; /* Darker green on hover */
+}
+h1,h2
+{
+	 display: inline-block;
+	color: black;
+	margin-right: 30px;
+}
+.navbar {
+	position: fixed;
+	top: 60px;
+	right: 100px;
+}
+.navbar a{
+	margin-left: 40px;
+}
+.larger-text {
+        font-size: 30px;  
+            }
+            .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+            z-index: 1000;
+        }
+        p {
+  border-bottom: 2px solid gray;
+}
+.containermenu {
+    display: flex;
+    height: 90vh;
+    width: 200vw;
+}
+
+.scrollable-section {
+    position: fixed;
+    height: 500px; /* Fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.content {
+    flex: 1; /* Take up available space */
+    margin-right: 80px; /* Space between content and images */
+    color: black;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    max-width: 1000px; /* Set a maximum width for the gallery */
+    margin-left: 20px;
+}
+
+.images img {
+    width: calc(33.333% - 10px);
+    max-width: 250px; /* Adjust size of the images */
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+.scrollable-part {
+    width: 900px;
+    height: 100%; /* Fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-left: 400px;
+}
+    </style>
+</head>
+<body>
+<h1>Purith</h1>
+<div class="links">
+<div class="top-left-links">
+<a href="index.html">Explore</a></li>
+<a href="assets.html">Assets</a></li>
+<a href="images.html">Images</a></li>
+<a href="purith.html">Purith<button type="button" style="width: 40px; height: 20px; font-size: 10px; background-color:dodgerblue; color: white; font-weight: bold; border-radius: 12px;">PRO</button></a></li>
+<a href="shoppingcart.html">Shopping Cart</a></li><br>
+</div></div>
+<p border-bottom="2px solid gray;"></p>
+
+<div class="containermenu">
+    <div class="scrollable-section">
+        <div class="container">
+        <div class="content">
+        	<form>
+    <script src="https://kit.fontawesome.com/27c041fde7.js" crossorigin="anonymous"></script>
+    <h3><i class="fa-solid fa-grip-vertical" style="margin-right: 10px;"></i>Creative fields</h3>
+    <ul>
+    	<li>Graphic design</li>
+    	<li>Photography</li>
+    	<li>UI/UX</li>
+    	<li>Advertising</li>
+    	<li>Beauty photography</li>
+    	<li>Collage</li>
+    	<li>Fashion Design</li>
+    	<li>Flower arrangement</li>
+    	<li>Illustration</li>
+    	<li>Logo design</li>
+    	<li>Make-up arts</li>
+    	<li>Product design</li>
+    	<li>Jewerly design</li>
+    	<li>Fashion styling</li>
+    	<li>Fashion illustration</li>
+    	<li>Editorial design</li>
+        <li>Motion graphics</li>
+        <li>3D Modelling</li>
+        <li>3D Art</li>
+        <li>Animation</li>
+        <li>Branding</li>
+        <li>Character design</li>
+        <li>Costume design</li>
+        <li>Fashion Retouching</li>
+        <li>Modelling</li>
+        <li>Performing Arts</li>
+    </ul>
+    <h3><i class="fa-solid fa-screwdriver-wrench" style="margin-right: 10px;"></i>Tools</h3>
+    <ul>
+        <li>Adobe Photoshop</li>
+        <li>Adobe illustrator</li>
+        <li>Adobe InDesign</li>
+        <li>Adobe After Effects</li>
+        <li>Adobe Photoshop Lightroom</li>
+    </ul>
+</form></div></div></div>
+ <div class="scrollable-part">
+<div class="images">
+<img src="1.jpg" alt="images" >
+<img src="2.jpg" alt="images">
+<img src="3.jpg" alt="images">
+<img src="4.jpg" alt="images">
+<img src="5.jpg" alt="images">
+<img src="6.jpg" alt="images">
+<img src="7.jpg" alt="images">
+<img src="8.jpg" alt="images">
+<img src="9.jpg" alt="images">
+<img src="10.jpg" alt="images">
+<img src="11.jpg" alt="images">
+<img src="12.jpg" alt="images">
+<img src="13.jpg" alt="images">
+<img src="14.jpg" alt="images">
+<img src="15.jpg" alt="images">
+</div></div></div>
+</body>
+</html>

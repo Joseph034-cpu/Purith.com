@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+<style>
+		body, html {
+    height: 100%;
+     overflow-x: hidden;
+	    }
+	    a {
+            font-size: 20px;
+            margin-right: 30px;
+            color: black;
+            text-decoration: none;
+        }
+         a:hover {
+    background-color: grey; /* Darker green on hover */
+}
+h1,h2
+{
+	 display: inline-block;
+	color: black;
+	margin-right: 30px;
+}
+.navbar {
+	position: fixed;
+	top: 60px;
+	right: 100px;
+}
+.navbar a{
+	margin-left: 40px;
+}
+.larger-text {
+        font-size: 30px;  
+            }
+            .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+            z-index: 1000;
+        }
+        .custom-alert button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        .custom-alert-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            border: none;
+            z-index: 999;
+        }
+p {
+  border-bottom: 2px solid gray;
+}
+.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border: none;
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+
+        .menu > li{
+            float: left;
+        }
+
+        .menu > li{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 25px;
+            text-decoration: none;
+             font-size: 25px;
+        }
+
+        .menu > li:hover {
+            background-color: grey;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .submenu > li{
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .submenu > li:hover {
+            background-color: #111;
+        }
+
+        .menu > li:hover .submenu {
+            display: block;
+        }
+        .containermenu {
+    display: flex;
+    height: 90vh;
+    width: 200vw;
+}
+
+.scrollable-section {
+    position: fixed;
+    height: 500px; /* Fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.content {
+    flex: 1; /* Take up available space */
+    margin-right: 80px; /* Space between content and images */
+    color: black;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    max-width: 1000px; /* Set a maximum width for the gallery */
+    margin-left: 20px;
+}
+
+.images img {
+    width: calc(33.333% - 10px);
+    max-width: 250px; /* Adjust size of the images */
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+.scrollable-part {
+    width: 900px;
+    height: 100%; /* Fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-left: 400px;
+}
+</style>
+</head>
+<body>
+	<div class="custom-alert-overlay" id="customAlertOverlay"></div>
+    <div class="custom-alert" id="customAlertBox">
+        <p id="customAlertMessage"></p>
+        <button onclick="closeCustomAlert()">OK</button></div>
+<h1>Purith</h1>
+<a href="index.html">Explore</a></li>
+<a href="assets.html">Assets</a></li>
+<a href="images.html">Images</a></li>
+<a href="purith.html">Purith<button type="button" style="width: 40px; height: 20px; font-size: 10px; background-color:dodgerblue; color: white; font-weight: bold; border-radius: 12px;">PRO</button></a></li>
+<a href="shoppingcart.html">Shopping Cart</a></li><br>
+<p border-bottom="2px solid gray;"></p>
+<div class="containermenu">
+    <div class="scrollable-section">
+        <div class="container">
+        <div class="content">
+<script src="https://kit.fontawesome.com/27c041fde7.js" crossorigin="anonymous"></script>
+<button class="custom-button" ><i class="fa-solid fa-filter"></i>Filter</button><br><br>
+<button id="mybutton" type="button" style="width: 200px; height: 40px; font-size: 15px; background-color:whitesmoke; color: black;border-radius: 20px;">Project</button>
+<script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "index.html";});
+    </script><br><br>
+<button id="mybutton" type="button" style="width: 200px; height: 40px; font-size: 15px; background-color:whitesmoke; color: black;border-radius: 20px;" onclick="location.href='assets.html';">Assets</button>
+<script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "assets.html";});
+    </script><br><br>
+<button id="mybutton" type="button" style="width: 200px; height: 40px; font-size: 15px; background-color:whitesmoke; color: black;border-radius: 20px;" onclick="location.href='images.html';">Images</button>
+<script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "images.html";});
+    </script><br><br>
+<nav>
+    <script src="https://kit.fontawesome.com/27c041fde7.js" crossorigin="anonymous"></script>
+        <ul class="menu">
+           <li><i class="fa-solid fa-grip-vertical" style="margin-right: 10px;"></i>Creative Fields
+            <ul class="submenu">
+                <li>Graphic design</li>
+                <li>Photography</li>
+                <li>UI/UX</li>
+                <li>Advertising</li>
+                <li>Beauty photography</li>
+                <li>Collage</li>
+                <li>Fashion Design</li>
+                <li>Flower arrangement</li>
+                <li>Illustration</li>
+                <li>Logo design</li>
+                <li>Make-up arts</li>
+                <li>Product design</li>
+                <li>Jewerly design</li>
+                <li>Fashion styling</li>
+                <li>Fashion illustration</li>
+                <li>Editorial design</li>
+                <li>Motion graphics</li>
+                <li>3D Modelling</li>
+                <li>3D Art</li>
+                <li>Animation</li>
+            </ul>
+           </li><br><br>
+           <li><i class="fa-solid fa-user" style="margin-right: 10px;"></i>Availability
+             <ul class="submenu">
+            <input type="radio" id="All" name="Purith" value="All">
+            <label for="All">All</label><br><br>
+            <input type="radio" id="Full time" name="Purith" value="Full time">
+            <label for="Full time">Full time</label><br><br>
+            <input type="radio" id="Project" name="Purith" value="Project">
+            <label for="Project">Project</label>
+        </ul>
+           </li><br><br>
+           <li><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Location
+            <ul class="submenu">
+                <li>Coutry: Kenya</li>
+                <li>City: Nairobi</li>
+                <li>Building: Accra Trade centre</li>
+                <li>PO BOX: 00100</li>
+                <li>Tel No. 0795293001</li>
+            </ul>
+           </li><br><br>
+           <li><i class="fa-solid fa-screwdriver-wrench" style="margin-right: 10px;"></i>Tools
+            <ul class="submenu">
+                <li>Adobe Photoshop</li>
+                <li>Adobe illustrator</li>
+                <li>Adobe InDesign</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Photoshop Lightroom</li>
+            </ul>
+           </li>
+        </ul>
+    </nav>
+</div></div></div>
+<div class="scrollable-part">
+<div class="images">
+    <input type="text" style="width: 500px; height: 40px; border-radius: 20px; font-size: 15px; margin-left: 200px;" Id="first"name="first" Placeholder="Search"required><br><br>
+<img src="b.png" alt="images" >
+<img src="c.png" alt="images">
+<img src="d.jpg" alt="images">
+<img src="e.jpg" alt="images">
+<img src="g.jpg" alt="images">
+<img src="h.jpg" alt="images">
+<img src="i.jpg" alt="images">
+<img src="j.jpg" alt="images">
+<img src="l.png" alt="images">
+<img src="m.png" alt="images">
+<img src="n.jpg" alt="images">
+<img src="a.jpg" alt="images">
+<img src="o.jpg" alt="images">
+<img src="p.jpg" alt="images">
+<img src="q.jpg" alt="images">
+<img src="r.jpg" alt="images">
+</div></div></div>
+</body>
+<script type="text/javascript">
+	 function showCustomAlert(message) {
+            document.getElementById('customAlertMessage').textContent = message;
+            document.getElementById('customAlertOverlay').style.display = 'block';
+            document.getElementById('customAlertBox').style.display = 'block';
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlertOverlay').style.display = 'none';
+            document.getElementById('customAlertBox').style.display = 'none';
+        }
+	showCustomAlert("Get the best perfume at an affordable price");
+</script>
+</html>

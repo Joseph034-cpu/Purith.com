@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assets</title>
+<link rel="stylesheet" href="style.css">
+<style>
+		body, html {
+    height: 100%;
+    overflow-x: hidden;
+	    }
+        h1,h2
+{
+     display: inline-block;
+    color: black;
+    margin-right: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+	    a {
+            font-size: 20px;
+            margin-right: 30px;
+            color: black;
+            text-decoration: none;
+        }
+         a:hover {
+    background-color: grey; /* Darker green on hover */
+}
+.navbar {
+	position: fixed;
+	top: 60px;
+	right: 100px;
+}
+.navbar a{
+	margin-left: 30px;
+}
+.larger-text {
+        font-size: 30px;  
+            }
+            .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+            z-index: 1000;
+        }
+        .image-container {
+    position: relative;
+    display: inline-block;
+}
+.resized-image {
+            max-width: 100%; 
+            height: 300px;
+        }
+.top-left-links {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+}
+.top-left-links a {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.containermenu {
+    display: flex;
+    height: 90vh;
+    width: 200vw;
+}
+
+.scrollable-section {
+    height: 350px; /* Fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+        </style>
+</head>
+<body>
+    <div class="image-container">
+    <img src="Assets.jpg" alt="Your Image" class="resized-image">
+<h1>Purith</h1>
+<div class="links">
+<div class="top-left-links">
+<a href="index.html">Explore</a></li>
+<a href="assets.html">Assets</a></li>
+<a href="images.html">Images</a></li>
+<a href="purith.html">Purith<button type="button" style="width: 40px; height: 20px; font-size: 10px; background-color:dodgerblue; color: white; font-weight: bold; border-radius: 12px;">PRO</button></a></li>
+<a href="shoppingcart.html">Shopping Cart</a></li><br>
+</div></div></div>
+<div class="containermenu">
+    <div class="scrollable-section">
+        <div class="container">
+        <div class="content">
+<input type="text" style="width: 250px; height: 40px; border-radius: 40px; font-size: 15px;" Id="first"name="first" Placeholder="Search Assets..."required><br><br>
+<form>
+    <script src="https://kit.fontawesome.com/27c041fde7.js" crossorigin="anonymous"></script>
+    <h3><i class="fa-solid fa-list" style="margin-right: 10px;"></i>Categories</h3>
+  <input type="radio" id="All categories" name="Purith" value="All categories">
+  <label for="All categories">All categories</label><br><br>
+  <input type="radio" id="Fonts" name="Purith" value="Fonts">
+  <label for="Fonts">Fonts</label><br><br>
+  <input type="radio" id="Templates" name="Purith" value="Templates">
+  <label for="Templates">Templates</label>
+</form>
+    <h3><<i class="fa-solid fa-icons" style="margin-right: 10px;"></i>Extensions</h3>
+  <input type="radio" id="PDF" name="Purith" value="PDF">
+  <label for="PDF">PDF</label><br><br>
+  <input type="radio" id="JPG" name="Purith" value="JPG">
+  <label for="JPG">JPG</label><br><br>
+  <input type="radio" id="PNG" name="Purith" value="PNG">
+  <label for="PNG">PNG</label><br><br>
+   <input type="radio" id="GIF" name="Purith" value="GIF">
+  <label for="GIF">GIF</label>
+</div></div></div>
+<div class="images">
+<img src="home.jpg" alt="assets" >
+<img src="blow.jpg" alt="assets">
+<img src="scent.jpg" alt="assets">
+<img src="sparkle.jpg" alt="assets">
+<img src="orient.jpg" alt="assets">
+<img src="race.jpg" alt="assets">
+<img src="story.jpg" alt="assets">
+<img src="floral.jpg" alt="assets">
+</div></div>
+</body>
+</html>
